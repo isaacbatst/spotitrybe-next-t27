@@ -1,8 +1,16 @@
+import ChooseCategory from "@/components/ChooseCategory";
+import ChoosePlaylist from "@/components/ChoosePlaylist";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Spotitrybe</h1>
+    <main className="flex min-h-screen flex-col">
+      <Header />
+      <section className="flex flex-1 gap-10 justify-evenly py-10">
+        <ChooseCategory />
+        <ChoosePlaylist />
+        <ChoosePlaylist />
+      </section>
     </main>
   )
 }
